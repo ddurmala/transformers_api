@@ -16,14 +16,38 @@
     </section>
 
     <h2>Routes:</h2>
+    <h3>Autobot Routes</h3>
 
     <ul>
         <li><span class="code">GET /api/autobots</span> - Get all Autobots</li>
+        <li><span class="code">GET /users</span> - Retrieve User and their Associated Autobots <span
+                class="code">Requires Authentication</span></li>
         <li><span class="code">POST /api/autobots</span> - Add an Autobot to the database JSON<span class="code">{name:
                 STRING, color:
                 STRING}</span>
         </li>
+        <li><span class="code">PUT /api/autobot</span> - Update an autobot in the database<span
+                class="code">{autobot_id: ID, autobot:
+                STRING, color:
+                STRING}</span>
+        </li>
+        <li><span class="code">DELETE /api/autobot</span> - Remove an autobot in the database<span
+                class="code">{autobot_id: ID} | Requires Authentication</span>
+        </li>
 
+    </ul>
+
+    <h3>User Routes:</h3>
+    <ul>
+        <li>
+            <span class="code">POST /api/auth/register</span>
+            - Register a user account <span class="code">JSON {email: STRING, password: STRING (minimum 6
+                characters)}</span>
+        </li>
+        <li>
+            <span class="code">POST /api/auth/login</span>
+            - Login to account <span class="code">JSON {email: STRING, password: STRING}</span>
+        </li>
     </ul>
 </body>
 
