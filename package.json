@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "cd ./server && npm run dev",
     "start": "cd ./server && npm start",
-    "install": "cd ./server && nmp i"
+    "install": "cd ./server && npm i"
   },
   "keywords": [],
   "author": "",
